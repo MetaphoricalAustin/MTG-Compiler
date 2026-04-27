@@ -88,7 +88,7 @@ Sample command inputs for actions:
 
 do commands in file:
 
-  cast prepared spell -> <file name>
+  cast prepared spell -> file name
 
 ---
 
