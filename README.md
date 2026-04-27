@@ -4,8 +4,6 @@ To run download, make jar file of the following with the command, then run it:
 
 jar cf jar-file compiler.java
 
-jar cfe compiler.java MainClass main
-
 java -jar compiler.jar
 
 ## Stack (on the backend)
