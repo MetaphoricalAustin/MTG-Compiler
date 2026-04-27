@@ -1,6 +1,6 @@
 # Magic The Gathering Compiler
 
-## Stack
+## Stack (on the backend)
 
 `stack()` | `stack(Object)` | `push` | `pop` | `size` | `printTop`
 
