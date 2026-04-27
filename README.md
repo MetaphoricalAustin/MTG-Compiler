@@ -2,7 +2,7 @@
 
 To run download, make jar file of the following with the command, then run it:
 
-jar cf jar-file compiler.java
+jar cf compiler.jar compiler.java
 
 java -jar compiler.jar
 
