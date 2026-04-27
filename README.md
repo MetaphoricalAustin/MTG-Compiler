@@ -1,5 +1,7 @@
 # Magic The Gathering Compiler
 
+to run: download jar file then run java -jar compiler.jar
+
 ## Stack (on the backend)
 
 `stack()` | `stack(Object)` | `push` | `pop` | `size` | `printTop`
