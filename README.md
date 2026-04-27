@@ -1,6 +1,10 @@
 # Magic The Gathering Compiler
 
-to run: download jar file then run java -jar compiler.jar
+make jar file of the following with the command(s):
+
+jar cf jar-file compiler.java
+
+java -jar compiler.jar
 
 ## Stack (on the backend)
 
