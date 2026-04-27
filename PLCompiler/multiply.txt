@@ -1,0 +1,16 @@
+tap
+c
+tap farther
+tap farther
+tap farther
+tap farther
+tap farther
+tap
+c
+tap farther
+tap farther
+tap farther
+do math
+*
+display current mana
+done

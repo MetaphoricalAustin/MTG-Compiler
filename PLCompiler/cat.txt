@@ -1,0 +1,3 @@
+telepathy
+I wanted this outputted to console
+done

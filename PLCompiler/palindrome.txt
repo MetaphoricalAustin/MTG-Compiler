@@ -1,0 +1,37 @@
+tap
+s
+tap less
+tap
+f
+tap less
+tap less
+tap less
+tap less
+tap less
+tap
+f
+tap less
+tap less
+tap less
+tap
+m
+tap farther
+tap farther
+tap
+f
+tap less
+tap less
+tap less
+tap
+f
+tap less
+tap less
+tap less
+tap less
+tap less
+tap
+s
+tap less
+compare mana
+7
+done

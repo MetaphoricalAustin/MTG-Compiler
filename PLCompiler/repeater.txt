@@ -1,0 +1,4 @@
+tap repeated
+f
+5
+done

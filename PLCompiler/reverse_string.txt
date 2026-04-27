@@ -1,0 +1,39 @@
+tap
+i
+tap less
+tap
+f
+tap less
+tap
+m
+tap less
+tap
+m
+tap less
+tap
+m
+tap farther
+tap farther
+tap
+s
+tap farther
+tap farther
+tap farther
+tap farther
+tap
+m
+tap farther
+tap farther
+tap
+s
+tap less
+tap
+m
+tap less
+tap
+f
+tap less
+tap less
+write note backwards
+10
+done
