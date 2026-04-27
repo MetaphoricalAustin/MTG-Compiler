@@ -20,7 +20,7 @@ public class compiler
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		Compiler.stack stack = new stack(); //despite the warning I need this line or it will error with uninitialized 
+		new stack(); //despite the warning I need this line or it will error with uninitialized 
 		
 		System.out.println("Spell Builder Ready:");
 		line = scanner.nextLine();
@@ -65,7 +65,7 @@ public class compiler
 				tapRepeated(scanner, history);
 				worked = true;
 			}
-			else if(line.equals("recast") || line.equals("Recast"))
+			else if(line.equalsIgnoreCase("recast"))
 			{
 				recast(scanner, history);
 				worked = true;
@@ -219,12 +219,14 @@ public class compiler
 		} while(!line.equals("done") && fromMain);
 	}
 	
+	@SuppressWarnings({ "rawtypes" })
 	private static void telepathy(Scanner scanner, ArrayList history)
 	{
 		String input = scanner.nextLine();
 		System.out.println(input);
 	}
 	
+	@SuppressWarnings({ "rawtypes" })
 	private static void compareMana(Scanner scanner, ArrayList history) //palindrome checker
 	{
 	    System.out.println("How much mana do you want to compare");
@@ -266,6 +268,7 @@ public class compiler
 		System.out.println((int) stack.pop().toString().charAt(0));
 	}
 	
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private static void doMath(Scanner scanner, ArrayList history)
 	{
 		System.out.println("What operator is going to be used?");
@@ -325,6 +328,7 @@ public class compiler
 		}
 	}
 	
+	@SuppressWarnings({ "rawtypes" })
 	private static void commitToMemory(Scanner scanner, ArrayList history)//make a file and put the users command history into it
 	{
 		System.out.println("What should the file be named?");
@@ -345,7 +349,7 @@ public class compiler
 		}
 	}
 	
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private static void writeNote(Scanner scanner, ArrayList history)
 	{
 		System.out.println("Give the length of the characters to print");
@@ -355,7 +359,7 @@ public class compiler
 		System.out.println();
 	}
 	
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private static void writeNoteBackwards(Scanner scanner, ArrayList history) //print the top of the stack as a letter
 	{
 		System.out.println("Give the length of the characters to print");
@@ -392,14 +396,14 @@ public class compiler
 		System.out.println("How many times?");
 		String number = scanner.nextLine();
 		history.addLast(number);
-		System.out.println("Casting " + spell + " " + number + "of times");
+		System.out.println("Casting: " + spell + " " + number + " times");
 		for(int x = 0; x < Integer.parseInt(number); x++)
 		{
 			doCommand(spell, scanner, history, false);
 		}
 	}
 	
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private static void tapRepeated(Scanner scanner, ArrayList history)
 	{
 		System.out.println("What is mana getting added to the spell?");
@@ -409,13 +413,9 @@ public class compiler
 		String number = scanner.nextLine();
 		history.addLast(number);
 		System.out.println("Adding " + object + " mana to spell " + number + " times");
-		for(int x = 0; x < Integer.parseInt(number); x++)
-		{
-			stack.push(object);
-			System.out.println(object);
-		}
 	}
 	
+	@SuppressWarnings({ "rawtypes" })
 	private static void recallMemory(Scanner scanner, ArrayList history)//needed?
 	{
 		System.out.println("What spell would you like to cast?");
@@ -457,6 +457,7 @@ public class compiler
 		}
 	}
 	
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private static void readFromFile(Scanner scanner, ArrayList history)//try the file and if it exists do the commands inside of it
 	{
 		System.out.println("What is the file to output");
@@ -493,6 +494,7 @@ public class compiler
 		}
 	}
 	
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private static boolean outputFile(Scanner scanner, ArrayList history)//try the file and if it exists output each line inside of it to console
 	{
 		System.out.println("What is the file to output");
