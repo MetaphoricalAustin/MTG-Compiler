@@ -31,7 +31,7 @@
 | **tap** `(P M I S F C [optional args])` | Push desired letter onto the stack (C = 0) |
 | **tap farther** | Add +1 to the top value of the stack |
 | **tap less** | Subtract 1 from the top of the stack |
-| **tap repeated** | Add a specific mana to the stack (and print it) x times |
+| **tap repeated** | Add a specific mana to the stack x times |
 
 ### Input / Output
 
