@@ -1,6 +1,6 @@
 # Magic The Gathering Compiler
 
-make jar file of the following with the command(s):
+To run download, make jar file of the following with the command, then run it:
 
 jar cf jar-file compiler.java
 
